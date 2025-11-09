@@ -10,7 +10,7 @@ public class LoginTests {
     }
 
     @Test
-    public void loginSucsess(){
+    public void loginSuccess(){
         //open form(find element, click)
         //fill email(find element, click, clear, type)
         //fill password(find element, click, clear, type)
