@@ -18,6 +18,33 @@ public class HomeWork {
         wd.get("https://telranedu.web.app/login");
         wd.manage().window().maximize();
     }
+    @Test
+    public void xPathHomeWork(){
+        //HomeWork xPath
+        WebElement btnRegistration = wd.findElement(By.xpath("//input/..//button[text() = 'Registration']"));
+        WebElement phonebook = wd.findElement(By.xpath("//*[text() = 'PHONEBOOK']"));
+        WebElement aboutUpTheTree = wd.findElement(By.xpath("//a[3]/.."));
+        WebElement aboutByText = wd.findElement(By.xpath("//a[text() = 'ABOUT']"));
+        WebElement formX = wd.findElement(By.xpath("//form"));
+        WebElement h1X = wd.findElement(By.xpath("//a/.."));
+        WebElement brX = wd.findElement(By.xpath("//button[2]/../.."));
+        WebElement navbarX = wd.findElement(By.xpath("//*[@class = 'navbar-component_nav__1X_4m']"));
+        WebElement loginX = wd.findElement(By.xpath("//*[@class = 'login_login__3EHKB']"));
+        WebElement rootX = wd.findElement(By.xpath("//*[@id = 'root']"));
+        WebElement containerX = wd.findElement(By.xpath("//*[@class = 'container']"));
+        WebElement button1 = wd.findElement(By.xpath("//button"));
+        WebElement homeHrefX = wd.findElement(By.xpath("//*[@href = '/home']"));
+        WebElement aboutHrefX = wd.findElement(By.xpath("//*[@href = '/about']"));
+        WebElement loginHrefX = wd.findElement(By.xpath("//*[@href = '/login']"));
+
+        //done in class
+        //by parts xPath
+        WebElement placeholderX1 = wd.findElement(By.xpath("//input[@placeholder = 'Password']"));
+        WebElement placeholderX2 = wd.findElement(By.xpath("//*[contains(@placeholder, 'sword')]"));
+        WebElement placeholderX3 = wd.findElement(By.xpath("//input[starts-with(@placeholder, 'Pass')]"));
+
+
+    }
 
     @Test
     public void locators() {
@@ -28,7 +55,7 @@ public class HomeWork {
         WebElement h1Css = wd.findElement(By.cssSelector("h1"));
         WebElement br = wd.findElement(By.tagName("br"));
         WebElement brCss = wd.findElement(By.cssSelector("br"));
-        WebElement button1 = wd.findElement(By.xpath("//button"));
+
 
 
         //by class
@@ -36,14 +63,14 @@ public class HomeWork {
         WebElement navbarCss = wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
         WebElement login = wd.findElement(By.className("login_login__3EHKB"));
         WebElement loginCss = wd.findElement(By.cssSelector(".login_login__3EHKB"));
-        WebElement containerxpath = wd.findElement(By.xpath("//*[@class = 'container']"));
+
 
 
 
         //by id
         WebElement root = wd.findElement(By.id("root"));
         WebElement rootCss = wd.findElement(By.cssSelector("#root"));
-        WebElement rootxpath = wd.findElement(By.xpath("//*[@id = 'root']"));
+
         //   "//*[@attribute = 'name']" - * means pass
 
 
@@ -75,14 +102,7 @@ public class HomeWork {
 
     }
 
-    @Test
-    public void xPathHomeWork(){
-        //HomeWork xPath
-        WebElement btnRegistration = wd.findElement(By.xpath("//input/..//button[text() = 'Registration']"));
-        WebElement phonebook = wd.findElement(By.xpath("//*[text() = 'PHONEBOOK']"));
-        WebElement aboutUpTheTree = wd.findElement(By.xpath("//a[3]/.."));
-        WebElement aboutByText = wd.findElement(By.xpath("//a[text() = 'ABOUT']"));
-    }
+
 
     @Test
     public void classwork(){
