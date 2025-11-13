@@ -24,6 +24,12 @@ public class Index {
         WebElement canada = wd.findElement(By.cssSelector("tr:nth-child(3) td:last-child"));
         Assert.assertEquals(canada.getText(), "Canada");
     }
+    @Test
+    public void canada(){
+        //Canada
+        WebElement canada = wd.findElement(By.xpath("//*[text() = 'Canada']"));
+        Assert.assertEquals(canada.getText(), "Canada");
+    }
 
     @Test
     public void cssLocators(){
